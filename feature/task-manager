@@ -1,1 +1,13 @@
+import java.util.HashMap;
 
+public class TaskManager {
+    private HashMap<String, Task> tasks = new HashMap<>();
+
+    public void addTask(Task task) {
+        tasks.put(task.getId(), task);
+    }
+
+    public Task findTask(String id) {
+        return tasks.get(id);
+    }
+}
