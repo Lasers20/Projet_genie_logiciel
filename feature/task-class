@@ -1,1 +1,19 @@
+public class Task {
+    private String id;
+    private String title;
+    private TaskStatus status;
 
+    public Task(String id, String title) {
+        this.id = id;
+        this.title = title;
+        this.status = TaskStatus.TODO;
+    }
+
+    public void updateStatus(TaskStatus status) {
+        this.status = status;
+    }
+
+    public String getId() {
+        return id;
+    }
+}
